@@ -11,6 +11,7 @@ import BonusesSection from "@/components/BonusesSection";
 import PerfectFitSection from "@/components/PerfectFitSection";
 import InstructorSection from "@/components/InstructorSection";
 import CommunitySection from "@/components/CommunitySection";
+import GradsWorkHereSection from "@/components/GradsWorkHereSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -32,6 +33,7 @@ export default function Home() {
         <PerfectFitSection />
         <InstructorSection />
         <CommunitySection />
+        <GradsWorkHereSection />
         <FAQSection />
         <CTASection />
       </main>
