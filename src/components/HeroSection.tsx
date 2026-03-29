@@ -87,34 +87,50 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center px-4 pt-28 pb-0 sm:px-6 md:pt-36">
         {/* Countdown timer bar */}
         <div
-          className="mb-8 flex items-center gap-3 rounded-full px-4 py-2 text-sm"
+          className="mb-8 flex flex-row items-center"
           style={{
-            background: "rgba(255,255,255,0.05)",
-            border: "1px solid rgba(255,255,255,0.1)",
+            backgroundColor: "rgb(255, 255, 255)",
+            padding: "2px 8px 2px 2px",
+            borderRadius: "4px",
+            gap: "16px",
           }}
         >
-          <span className="text-white/70 text-xs sm:text-sm">
+          {/* Dark inner badge for label text */}
+          <span
+            className="inline-flex items-center whitespace-nowrap"
+            style={{
+              backgroundColor: "rgb(0, 0, 0)",
+              borderRadius: "2px",
+              padding: "4px 8px",
+              fontSize: "12px",
+              fontWeight: 600,
+              lineHeight: "18px",
+              letterSpacing: "-0.24px",
+              color: "rgb(255, 255, 255)",
+            }}
+          >
             Limited time offer ends in
           </span>
+          {/* Countdown numbers in black on white background */}
           <div className="flex items-center gap-1">
             {mounted ? (
               <>
                 <CountdownDigit value={pad(timeLeft.days)} />
-                <span className="text-white/50 text-xs font-medium mx-0.5">:</span>
+                <span style={{ fontSize: "14px", lineHeight: "14px", letterSpacing: "0.7px", color: "rgb(0, 0, 0)" }}>:</span>
                 <CountdownDigit value={pad(timeLeft.hours)} />
-                <span className="text-white/50 text-xs font-medium mx-0.5">:</span>
+                <span style={{ fontSize: "14px", lineHeight: "14px", letterSpacing: "0.7px", color: "rgb(0, 0, 0)" }}>:</span>
                 <CountdownDigit value={pad(timeLeft.minutes)} />
-                <span className="text-white/50 text-xs font-medium mx-0.5">:</span>
+                <span style={{ fontSize: "14px", lineHeight: "14px", letterSpacing: "0.7px", color: "rgb(0, 0, 0)" }}>:</span>
                 <CountdownDigit value={pad(timeLeft.seconds)} />
               </>
             ) : (
               <>
                 <CountdownDigit value="--" />
-                <span className="text-white/50 text-xs font-medium mx-0.5">:</span>
+                <span style={{ fontSize: "14px", lineHeight: "14px", letterSpacing: "0.7px", color: "rgb(0, 0, 0)" }}>:</span>
                 <CountdownDigit value="--" />
-                <span className="text-white/50 text-xs font-medium mx-0.5">:</span>
+                <span style={{ fontSize: "14px", lineHeight: "14px", letterSpacing: "0.7px", color: "rgb(0, 0, 0)" }}>:</span>
                 <CountdownDigit value="--" />
-                <span className="text-white/50 text-xs font-medium mx-0.5">:</span>
+                <span style={{ fontSize: "14px", lineHeight: "14px", letterSpacing: "0.7px", color: "rgb(0, 0, 0)" }}>:</span>
                 <CountdownDigit value="--" />
               </>
             )}
@@ -122,7 +138,7 @@ export default function HeroSection() {
         </div>
 
         {/* Main heading */}
-        <h1 className="max-w-3xl text-center text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-[56px]">
+        <h1 className="max-w-3xl text-center text-4xl font-semibold leading-[56px] tracking-[-1px] text-white sm:text-5xl md:text-[56px]">
           Master Prompt Engineering in 6 Weeks &{" "}
           <em className="not-italic italic text-[#FF6F00]">
             Supercharge your career.
@@ -331,9 +347,13 @@ export default function HeroSection() {
 function CountdownDigit({ value }: { value: string }) {
   return (
     <span
-      className="inline-flex min-w-[28px] items-center justify-center rounded-md px-1.5 py-0.5 text-xs font-semibold tabular-nums text-white"
+      className="inline-flex items-center justify-center tabular-nums"
       style={{
-        background: "rgba(255,255,255,0.08)",
+        fontSize: "14px",
+        fontWeight: 400,
+        lineHeight: "14px",
+        letterSpacing: "0.7px",
+        color: "rgb(0, 0, 0)",
       }}
     >
       {value}

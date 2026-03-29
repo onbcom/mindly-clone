@@ -55,35 +55,11 @@ const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-function QuoteIcon() {
-  return (
-    <svg
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <path
-        d="M10.667 18.667H6.667L9.334 10.667H13.334L10.667 18.667ZM21.334 18.667H17.334L20 10.667H24L21.334 18.667Z"
-        fill="#FF6F00"
-      />
-    </svg>
-  );
-}
-
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
-    <div
-      className="flex min-w-[300px] shrink-0 flex-col rounded-2xl bg-white p-6"
-      style={{ border: "1px solid rgba(0,0,0,0.08)" }}
-    >
-      {/* Quote icon */}
-      <QuoteIcon />
-
+    <div className="flex min-w-[300px] shrink-0 flex-col gap-[20px] rounded-[16px] bg-[rgb(242,241,238)] p-[16px]">
       {/* Person info */}
-      <div className="mt-4 flex items-center gap-3">
+      <div className="flex items-center gap-3">
         <Image
           src={testimonial.photo}
           alt={testimonial.name}
@@ -92,32 +68,31 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
           className="h-[60px] w-[60px] rounded-full object-cover"
         />
         <div>
-          <p className="text-base font-semibold text-black">
+          <p className="text-[22px] font-medium leading-[26.4px] text-black">
             {testimonial.name}
           </p>
-          <p className="text-sm text-[#666]">{testimonial.title}</p>
-          <span className="mt-1 inline-block rounded-full bg-[#E8F5E9] px-2.5 py-0.5 text-xs font-medium text-[#2E7D32]">
-            {testimonial.company}
-          </span>
+          <p className="text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
+            {testimonial.title}
+          </p>
         </div>
       </div>
 
       {/* Before section */}
-      <div className="mt-6">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#999]">
+      <div>
+        <p className="mb-2 text-[14px] font-medium leading-[16.8px] text-black uppercase">
           Before
         </p>
-        <p className="text-sm italic leading-relaxed text-[#666]">
+        <p className="text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
           &ldquo;{testimonial.before}&rdquo;
         </p>
       </div>
 
       {/* After section */}
-      <div className="mt-5">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#333]">
+      <div className="flex flex-col gap-[16px] rounded-[12px] bg-[rgb(26,26,26)] p-[14px]">
+        <p className="text-[14px] font-medium leading-[16.8px] text-[rgb(209,209,209)] uppercase">
           After
         </p>
-        <p className="text-sm leading-relaxed text-[#333]">
+        <p className="text-[18px] font-medium leading-[23.4px] text-white">
           &ldquo;{testimonial.after}&rdquo;
         </p>
       </div>
@@ -129,20 +104,15 @@ export default function TestimonialsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="bg-[#F2F1EE] px-6 py-20 md:py-28">
+    <section className="bg-white px-[48px] py-[100px]">
       <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-4 text-center text-sm font-medium tracking-wide text-[#999]">
+        <p className="mb-4 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(117,117,117)]">
           Testimonials
         </p>
 
-        {/* Handwritten "This can be you" */}
-        <p className="mb-3 text-center font-[family-name:var(--font-gloria)] text-lg text-[#999]">
-          This can be you
-        </p>
-
         {/* Main heading */}
-        <h2 className="mx-auto mb-14 max-w-[700px] text-center text-[32px] leading-[1.15] font-bold text-black md:text-[48px]">
+        <h2 className="mx-auto mb-14 max-w-[700px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-black md:text-[48px]">
           Our Graduates Don&apos;t Just Learn, They Achieve.
         </h2>
 

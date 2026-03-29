@@ -52,29 +52,29 @@ const STATS: StatCard[] = [
 
 export default function ResultsSection() {
   return (
-    <section id="why-choose-us" className="bg-[#F2F1EE] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1100px]">
+    <section id="why-choose-us" className="bg-white px-[48px] py-[100px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section labels */}
-        <p className="mb-2 text-center text-sm font-medium tracking-wide text-[#999]">
+        <p className="mb-2 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(117,117,117)]">
           Why choose us?
         </p>
-        <p className="mb-6 text-center font-[family-name:var(--font-gloria)] text-lg text-[#FF6F00] -rotate-2">
+        <p className="mb-6 text-center font-[family-name:var(--font-gloria)] text-[13px] leading-[16.9px] tracking-[1px] uppercase text-black -rotate-2">
           This can be you
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-16 max-w-[700px] text-center text-[32px] leading-[1.15] font-bold text-black md:text-[48px]">
+        <h2 className="mx-auto mb-16 max-w-[700px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-black md:text-[48px]">
           The{" "}
           <span className="italic text-[#FF6F00]">Results</span> Speak for
           Themselves
         </h2>
 
         {/* Stats grid */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 rounded-[20px] bg-[rgb(242,241,238)] p-[24px] sm:grid-cols-2 lg:grid-cols-3">
           {STATS.map((stat, index) => (
             <div
               key={`${stat.title}-${index}`}
-              className="rounded-xl border border-black/8 bg-white p-6"
+              className="p-6"
             >
               <p
                 className={`mb-2 text-[32px] font-bold leading-tight ${
@@ -83,10 +83,10 @@ export default function ResultsSection() {
               >
                 {stat.value}
               </p>
-              <p className="mb-2 text-lg font-semibold text-black">
+              <p className="mb-2 text-[22px] font-medium leading-[26.4px] text-black">
                 {stat.title}
               </p>
-              <p className="text-sm leading-relaxed text-[#666]">
+              <p className="text-[18px] font-medium leading-[23.4px] text-[rgb(72,72,72)]">
                 {stat.description}
               </p>
             </div>

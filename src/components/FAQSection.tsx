@@ -71,34 +71,34 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="bg-[#0A0A0A] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[800px]">
+    <section className="bg-[rgb(10,10,10)] px-[48px] py-[100px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-6 text-center text-sm font-medium tracking-wide text-white/50">
+        <p className="mb-6 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(186,186,186)]">
           FAQ
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-16 max-w-[700px] text-center text-[32px] leading-[1.15] font-bold text-white md:text-[48px]">
+        <h2 className="mx-auto mb-16 max-w-[700px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-white md:text-[48px]">
           Frequently Asked Questions
         </h2>
 
         {/* Accordion */}
-        <div className="flex flex-col">
+        <div className="mx-auto flex max-w-[800px] flex-col gap-2">
           {FAQ_ITEMS.map((item, index) => {
             const isOpen = openIndex === index;
             return (
               <div
                 key={item.question}
-                className="border-b border-white/10"
+                className="rounded-none bg-[rgb(26,26,26)] px-[24px]"
               >
                 <button
                   type="button"
                   onClick={() => toggle(index)}
-                  className="flex w-full items-center justify-between gap-4 py-6 text-left"
+                  className="flex h-[80px] w-full items-center justify-between gap-4 text-left"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-lg font-medium text-white">
+                  <span className="text-[20px] font-medium leading-[20px] text-white">
                     {item.question}
                   </span>
                   <span className="text-white/60">
@@ -111,7 +111,7 @@ export default function FAQSection() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="text-base leading-relaxed text-white/60">
+                    <p className="text-[16px] font-normal leading-[24px] text-white">
                       {item.answer}
                     </p>
                   </div>
@@ -123,15 +123,15 @@ export default function FAQSection() {
 
         {/* Bottom help text */}
         <div className="mt-12 text-center">
-          <p className="text-base text-white/50">
+          <p className="text-[22px] font-medium leading-[26.4px] text-[rgb(209,209,209)]">
             Still got questions? Reach out, we&apos;re here to help.{" "}
-            <a
-              href="#contact"
-              className="font-medium text-[#FF6F00] transition-colors hover:text-[#E56300]"
-            >
-              Reach out to us
-            </a>
           </p>
+          <a
+            href="#contact"
+            className="mt-4 inline-flex h-[44px] items-center rounded-[8px] bg-[rgb(255,111,0)] py-[4px] pr-[4px] pl-[16px] font-medium text-white transition-colors hover:bg-[#E56300]"
+          >
+            Reach out to us
+          </a>
         </div>
       </div>
     </section>

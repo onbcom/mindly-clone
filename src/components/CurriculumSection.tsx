@@ -196,7 +196,7 @@ function AccordionItem({
         onClick={onToggle}
         aria-expanded={isOpen}
       >
-        <span className="text-base font-semibold text-black md:text-lg">
+        <span className="text-[22px] font-medium leading-[26.4px] text-black">
           {week.title}
         </span>
         <div className="flex items-center gap-3">
@@ -236,15 +236,15 @@ export default function CurriculumSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="curriculum" className="bg-[#F2F1EE] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1100px]">
+    <section id="curriculum" className="bg-white px-[48px] py-[100px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-6 text-center text-sm font-medium tracking-wide text-[#999]">
+        <p className="mb-6 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(117,117,117)]">
           Curriculum Overview
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-16 max-w-[700px] text-center text-[32px] leading-[1.15] font-bold text-black md:text-[48px]">
+        <h2 className="mx-auto mb-16 max-w-[700px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-black md:text-[48px]">
           Unlock the secret sauce behind{" "}
           <span className="italic text-[#FF6F00]">world-class</span> products.
         </h2>
@@ -279,7 +279,7 @@ export default function CurriculumSection() {
               </div>
 
               {/* Title */}
-              <h3 className="mb-5 text-center text-xl font-bold text-black md:text-2xl">
+              <h3 className="mb-5 text-center text-[22px] font-medium leading-[26.4px] text-black md:text-2xl">
                 Join Mindly Today
               </h3>
 
@@ -300,7 +300,7 @@ export default function CurriculumSection() {
               <hr className="my-5 border-black/8" />
 
               {/* Course overview label */}
-              <p className="mb-4 text-[10px] font-semibold tracking-widest text-[#999] uppercase">
+              <p className="mb-4 text-[14px] font-medium text-[#999]">
                 A quick overview of the course
               </p>
 

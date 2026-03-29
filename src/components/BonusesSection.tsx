@@ -69,26 +69,25 @@ function GiftIcon() {
 export default function BonusesSection() {
   return (
     <section className="bg-[#0A0A0A] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1000px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Heading */}
-        <h2 className="mx-auto mb-14 max-w-[600px] text-center text-[24px] leading-[1.3] font-bold text-white md:text-[32px]">
+        <h2 className="mx-auto mb-14 max-w-[600px] text-center text-[24px] font-medium leading-[28.8px] text-white">
           Sign up before Friday and get{" "}
-          <span className="font-extrabold">$396</span> in bonuses
+          <span className="font-medium">$396</span> in bonuses
         </h2>
 
         {/* Bonus cards */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="flex flex-col gap-[16px] md:flex-row">
           {BONUSES.map((bonus) => (
             <div
               key={bonus.title}
-              className="flex flex-col items-center rounded-2xl px-6 py-8 text-center"
+              className="flex flex-1 flex-col items-center rounded-[12px] px-[32px] py-[20px] text-center gap-[20px]"
               style={{
-                background: "rgba(255,255,255,0.03)",
-                border: "1px solid rgba(255,255,255,0.1)",
+                backgroundColor: "rgba(20, 20, 20, 0.5)",
               }}
             >
               <GiftIcon />
-              <p className="text-base font-semibold leading-snug text-white">
+              <p className="text-[18px] font-medium leading-[23.4px] text-white">
                 {bonus.title}
               </p>
               <p className="mt-2 text-sm font-medium text-[#FF6F00]">

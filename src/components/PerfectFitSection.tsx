@@ -59,33 +59,33 @@ function XIcon() {
 
 export default function PerfectFitSection() {
   return (
-    <section className="bg-[#F2F1EE] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1100px]">
+    <section className="bg-white px-[48px] py-[100px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-6 text-center text-sm font-medium tracking-wide text-[#999]">
+        <p className="mb-6 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(117,117,117)]">
           Is this for you?
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[1.15] font-bold text-black md:text-[48px]">
+        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-black md:text-[48px]">
           This Course Is a Perfect Fit If You&apos;re Ready to ...
         </h2>
 
         {/* Two columns */}
         <div className="mx-auto grid max-w-[960px] grid-cols-1 gap-6 md:grid-cols-2">
           {/* Left - For you */}
-          <div className="overflow-hidden rounded-2xl">
-            <div className="rounded-t-2xl bg-[#FF6F00] px-6 py-4">
-              <h3 className="text-sm font-bold tracking-wider text-white uppercase">
-                This is for you if:
+          <div className="overflow-hidden">
+            <div className="bg-[#FF6F00] py-[6px] px-6">
+              <h3 className="text-[14px] font-medium uppercase text-[rgb(232,232,232)]">
+                THIS IS FOR YOU IF:
               </h3>
             </div>
-            <div className="rounded-b-2xl bg-white px-6 py-6">
-              <ul className="flex flex-col gap-4">
+            <div className="rounded-b-[12px] bg-white p-[32px]">
+              <ul className="flex flex-col gap-[12px]">
                 {FOR_YOU_ITEMS.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
+                  <li key={item} className="flex items-start gap-[8px] py-[8px]">
                     <CheckIcon />
-                    <span className="text-base leading-relaxed text-[#333]">
+                    <span className="text-[18px] font-medium leading-[23.4px] text-black">
                       {item}
                     </span>
                   </li>
@@ -95,18 +95,18 @@ export default function PerfectFitSection() {
           </div>
 
           {/* Right - Not for you */}
-          <div className="overflow-hidden rounded-2xl">
-            <div className="rounded-t-2xl bg-[#1A1A1A] px-6 py-4">
-              <h3 className="text-sm font-bold tracking-wider text-white uppercase">
-                This is not for you if:
+          <div className="overflow-hidden">
+            <div className="bg-[rgb(20,20,20)] py-[6px] px-6">
+              <h3 className="text-[14px] font-medium uppercase text-[rgb(232,232,232)]">
+                THIS IS NOT FOR YOU IF:
               </h3>
             </div>
-            <div className="rounded-b-2xl bg-white px-6 py-6">
-              <ul className="flex flex-col gap-4">
+            <div className="rounded-b-[12px] bg-white p-[32px]">
+              <ul className="flex flex-col gap-[12px]">
                 {NOT_FOR_YOU_ITEMS.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
+                  <li key={item} className="flex items-start gap-[8px] py-[8px]">
                     <XIcon />
-                    <span className="text-base leading-relaxed text-[#333]">
+                    <span className="text-[18px] font-medium leading-[23.4px] text-black">
                       {item}
                     </span>
                   </li>

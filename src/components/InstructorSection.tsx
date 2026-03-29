@@ -75,15 +75,15 @@ function InstagramIcon() {
 
 export default function InstructorSection() {
   return (
-    <section className="bg-[#F2F1EE] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1100px]">
+    <section className="bg-white px-[48px] pt-[100px] pb-[120px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-6 text-center text-sm font-medium tracking-wide text-[#999]">
+        <p className="mb-6 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(117,117,117)]">
           Meet Your Instructor
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[1.15] font-bold text-black md:text-[48px]">
+        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-black md:text-[48px]">
           Your Guide to the{" "}
           <span className="italic text-[#FF6F00]">AI Revolution</span>
         </h2>
@@ -102,69 +102,74 @@ export default function InstructorSection() {
             />
           </div>
 
-          {/* Right: Bio info */}
-          <div className="flex flex-col">
-            <h3 className="text-[28px] font-bold leading-tight text-black">
-              Cooper Geidt
-            </h3>
-            <p className="mt-1 text-base text-[#999]">
-              Senior Prompt Engineer
-            </p>
+          {/* Right: Bio info card */}
+          <div className="flex flex-col gap-[32px] rounded-[16px] bg-[rgb(10,10,10)] p-[24px]">
+            <div>
+              <h3 className="text-[22px] font-medium leading-[26.4px] text-white">
+                Cooper Geidt
+              </h3>
+              <p className="mt-1 text-[16px] font-medium leading-[20.8px] text-[rgb(163,163,163)]">
+                Senior Prompt Engineer
+              </p>
+            </div>
 
-            <p className="mt-6 text-[11px] font-semibold tracking-widest text-[#999] uppercase">
-              Bio
-            </p>
-            <p className="mt-3 text-base leading-relaxed text-[#666]">
-              My work has been featured in{" "}
-              <span className="font-semibold text-black">Forbes</span>,{" "}
-              <span className="font-semibold text-black">TechCrunch</span> and
-              I&apos;ve helped teams at{" "}
-              <span className="font-semibold text-black">Salesforce</span> build
-              their AI strategies. I&apos;ve distilled everything I&apos;ve
-              learned into this single program. My success is measured by your
-              success. Let&apos;s get started.
-            </p>
+            <div>
+              <p className="text-[14px] font-medium leading-[16.8px] text-white">
+                BIO
+              </p>
+              <p className="mt-3 text-[18px] font-medium leading-[23.4px] text-[rgb(232,232,232)]">
+                My work has been featured in{" "}
+                <span className="font-semibold text-white">Forbes</span>,{" "}
+                <span className="font-semibold text-white">TechCrunch</span> and
+                I&apos;ve helped teams at{" "}
+                <span className="font-semibold text-white">Salesforce</span> build
+                their AI strategies. I&apos;ve distilled everything I&apos;ve
+                learned into this single program. My success is measured by your
+                success. Let&apos;s get started.
+              </p>
+            </div>
 
             {/* Stats */}
-            <div className="mt-8 flex items-center gap-2">
-              <span className="text-2xl font-bold text-black">240K+</span>
-              <span className="text-base text-[#999]">Followers</span>
-            </div>
-
-            {/* As Featured On */}
-            <p className="mt-8 text-[11px] font-semibold tracking-widest text-[#999] uppercase">
-              As Featured On
+            <p className="text-[18px] font-medium leading-[23.4px] text-[rgb(209,209,209)]">
+              240K+ Followers
             </p>
-            <div className="mt-4 flex items-center gap-5">
-              <a
-                href="#"
-                className="text-[#666] transition-colors hover:text-black"
-                aria-label="YouTube"
-              >
-                <YouTubeIcon />
-              </a>
-              <a
-                href="#"
-                className="text-[#666] transition-colors hover:text-black"
-                aria-label="X (Twitter)"
-              >
-                <XTwitterIcon />
-              </a>
-              <a
-                href="#"
-                className="text-[#666] transition-colors hover:text-black"
-                aria-label="LinkedIn"
-              >
-                <LinkedInIcon />
-              </a>
-              <a
-                href="#"
-                className="text-[#666] transition-colors hover:text-black"
-                aria-label="Instagram"
-              >
-                <InstagramIcon />
-              </a>
-            </div>
+          </div>
+        </div>
+
+        {/* As Featured On — outside the card */}
+        <div className="mx-auto mt-10 max-w-[960px]">
+          <p className="text-[22px] font-medium leading-[26.4px] text-[rgb(26,26,26)]">
+            As Featured On
+          </p>
+          <div className="mt-4 flex items-center gap-5">
+            <a
+              href="#"
+              className="text-[#666] transition-colors hover:text-black"
+              aria-label="YouTube"
+            >
+              <YouTubeIcon />
+            </a>
+            <a
+              href="#"
+              className="text-[#666] transition-colors hover:text-black"
+              aria-label="X (Twitter)"
+            >
+              <XTwitterIcon />
+            </a>
+            <a
+              href="#"
+              className="text-[#666] transition-colors hover:text-black"
+              aria-label="LinkedIn"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="#"
+              className="text-[#666] transition-colors hover:text-black"
+              aria-label="Instagram"
+            >
+              <InstagramIcon />
+            </a>
           </div>
         </div>
       </div>

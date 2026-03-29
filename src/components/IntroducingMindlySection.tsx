@@ -60,15 +60,15 @@ function Marquee() {
 
 export default function IntroducingMindlySection() {
   return (
-    <section className="bg-[#0A0A0A] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1100px]">
+    <section className="bg-black px-[48px] py-[100px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-6 text-center text-sm font-medium tracking-wide text-white/50">
+        <p className="mb-6 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(186,186,186)]">
           Introducing Mindly
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[1.15] font-bold text-white md:text-[48px]">
+        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-white md:text-[48px]">
           The A-to-Z System for{" "}
           <span className="italic text-[#FF6F00]">High-Value</span> AI Results
         </h2>

@@ -73,11 +73,8 @@ function InstagramIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F2F1EE]">
-      {/* Top divider */}
-      <div className="mx-auto max-w-[1100px] border-t border-black/10" />
-
-      <div className="mx-auto max-w-[1100px] px-6 pt-12 pb-8">
+    <footer className="bg-[rgb(233,231,226)] px-[80px] pt-[100px] pb-[50px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Three-column layout */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {/* Left column — Brand */}
@@ -91,7 +88,7 @@ export default function Footer() {
               />
               <span className="text-2xl font-bold text-black">Mindly</span>
             </div>
-            <p className="mb-6 max-w-[280px] text-sm leading-relaxed text-black/50">
+            <p className="mb-6 max-w-[280px] text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
               Learn the skill that turns everyday AI into extraordinary results.
             </p>
             {/* Social icons */}
@@ -137,13 +134,13 @@ export default function Footer() {
 
           {/* Center column — Links */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold text-black">Links</h3>
+            <h3 className="mb-4 text-[22px] font-medium leading-[26.4px] text-[rgb(0,0,0)]">Links</h3>
             <ul className="flex flex-col gap-2.5">
               {FOOTER_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-black/50 transition-colors hover:text-black"
+                    className="text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)] transition-colors hover:text-black"
                   >
                     {link.label}
                   </Link>
@@ -154,13 +151,13 @@ export default function Footer() {
 
           {/* Right column — Others */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold text-black">Others</h3>
+            <h3 className="mb-4 text-[22px] font-medium leading-[26.4px] text-[rgb(0,0,0)]">Others</h3>
             <ul className="flex flex-col gap-2.5">
               {OTHER_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-black/50 transition-colors hover:text-black"
+                    className="text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)] transition-colors hover:text-black"
                   >
                     {link.label}
                   </Link>
@@ -173,38 +170,38 @@ export default function Footer() {
         {/* Contact info section */}
         <div className="mt-12 grid grid-cols-1 gap-6 border-t border-black/10 pt-8 sm:grid-cols-3">
           <div>
-            <p className="text-sm font-medium text-black">help@mindly.com</p>
-            <p className="mt-1 text-xs text-black/50">
+            <p className="text-[22px] font-medium leading-[26.4px] text-[rgb(0,0,0)]">help@mindly.com</p>
+            <p className="mt-1 text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
               For all your questions
             </p>
           </div>
           <div>
-            <p className="text-sm font-medium text-black">
+            <p className="text-[22px] font-medium leading-[26.4px] text-[rgb(0,0,0)]">
               +1 (464) 7315-0235
             </p>
-            <p className="mt-1 text-xs text-black/50">
+            <p className="mt-1 text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
               9am-8pm ET, Mon-Thu
             </p>
-            <p className="text-xs text-black/50">9am-6pm ET, Fri-Sun</p>
+            <p className="text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">9am-6pm ET, Fri-Sun</p>
           </div>
           <div>
-            <p className="text-sm font-medium text-black">
+            <p className="text-[22px] font-medium leading-[26.4px] text-[rgb(0,0,0)]">
               press@mindly.com
             </p>
-            <p className="mt-1 text-xs text-black/50">
+            <p className="mt-1 text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
               For all media inquiries
             </p>
           </div>
         </div>
 
         {/* Address */}
-        <p className="mt-6 text-xs text-black/40">
+        <p className="mt-6 text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
           1509 Capitol Street, Suit #1092B, Kansas, MS 10921
         </p>
 
         {/* Bottom bar */}
         <div className="mt-8 border-t border-black/10 pt-6">
-          <p className="text-center text-xs text-black/40">
+          <p className="text-center text-[16px] font-medium leading-[20.8px] text-[rgb(118,118,118)]">
             &copy; 2026 Mindly. All Rights reserved.
           </p>
         </div>

@@ -9,15 +9,15 @@ const PAIN_POINTS = [
 
 export default function IsThisYouSection() {
   return (
-    <section className="bg-[#F2F1EE] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1100px]">
+    <section className="bg-white px-[48px] py-[100px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-6 text-center text-sm font-medium tracking-wide text-[#999]">
+        <p className="mb-6 text-center text-[22px] font-medium leading-[26.4px] text-[#757575]">
           Is this you?
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[1.15] font-bold text-black md:text-[48px]">
+        <h2 className="mx-auto mb-16 max-w-[800px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-black md:text-[48px]">
           Does Your Experience with AI Feel More{" "}
           <span className="italic text-[#FF6F00]">
             Frustrating Than Futuristic?
@@ -29,7 +29,7 @@ export default function IsThisYouSection() {
           {PAIN_POINTS.map((point) => (
             <p
               key={point}
-              className="text-base leading-relaxed text-[#666]"
+              className="text-[18px] font-medium leading-[23.4px] text-black"
             >
               {point}
             </p>
@@ -37,7 +37,7 @@ export default function IsThisYouSection() {
         </div>
 
         {/* Bottom label */}
-        <p className="text-center text-sm font-medium italic text-[#FF6F00]">
+        <p className="text-center text-[13px] leading-[16.9px] tracking-[1px] uppercase text-black font-[family-name:var(--font-gloria)]">
           sounds familiar?
         </p>
       </div>

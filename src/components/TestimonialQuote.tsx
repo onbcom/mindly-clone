@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TestimonialQuote() {
   return (
-    <section className="bg-[#0A0A0A] px-6 py-20 md:py-28">
+    <section className="bg-black px-[48px] py-[100px]">
       <div className="mx-auto max-w-[800px] flex flex-col items-center">
         {/* Quote mark */}
         <div className="mb-8 text-[#FF6F00]">
@@ -42,8 +42,8 @@ export default function TestimonialQuote() {
             className="h-11 w-11 rounded-full object-cover"
           />
           <div>
-            <p className="text-sm font-semibold text-white">Cooper Geidt</p>
-            <p className="text-sm text-white/50">Senior Prompt Engineer</p>
+            <p className="text-sm font-medium text-white">Cooper Geidt</p>
+            <p className="text-sm font-medium text-[rgb(163,163,163)]">Senior Prompt Engineer</p>
           </div>
         </div>
       </div>

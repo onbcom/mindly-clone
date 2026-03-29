@@ -12,21 +12,21 @@ const AVATAR_POSITIONS = [
 export default function CommunitySection() {
   return (
     <section className="bg-[#F2F1EE] px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-[1100px]">
+      <div className="mx-auto max-w-[1200px]">
         {/* Section label */}
-        <p className="mb-6 text-center text-sm font-medium tracking-wide text-[#999]">
+        <p className="mb-6 text-center text-[22px] font-medium leading-[26.4px] text-[rgb(117,117,117)]">
           Join Our Community
         </p>
 
         {/* Main heading */}
-        <h2 className="mx-auto mb-6 max-w-[800px] text-center text-[32px] leading-[1.15] font-bold text-black md:text-[48px]">
+        <h2 className="mx-auto mb-6 max-w-[800px] text-center text-[32px] leading-[57.6px] font-semibold tracking-[-1px] text-black md:text-[48px]">
           Join an{" "}
           <span className="italic text-[#FF6F00]">Exclusive</span> Network of
           AI Innovators
         </h2>
 
         {/* Description */}
-        <p className="mx-auto mb-10 max-w-[640px] text-center text-base leading-relaxed text-[#666]">
+        <p className="mx-auto mb-10 max-w-[640px] text-center text-[18px] font-medium leading-[23.4px] text-[#666]">
           Join our private community to access discussions, job opportunities,
           and insights you won&apos;t find on Twitter or any public forum.
         </p>
@@ -120,7 +120,7 @@ export default function CommunitySection() {
             Our grads work here:
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8">
-            <span className="text-sm font-semibold tracking-wide text-[#999] uppercase">
+            <span className="text-[14px] font-medium text-[#999]">
               Top AI Companies
             </span>
             {[1, 2, 3, 4].map((n) => (
